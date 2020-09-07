@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:elevation="20dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_toEndOf="@+id/news_image"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="title"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/author_textview"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_title"
+            android:layout_toEndOf="@+id/news_image"
+             android:text="author"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/source_txt_view"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/author_textview"
+            android:layout_toEndOf="@id/news_image"
+             android:text="source"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/news_image"
+            android:layout_width="165dp"
+            android:layout_height="92dp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
